@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of object </title>
+</head>
+
+<body>
+    <script>
+        const data = [
+            { id: 1, name: "Ravi" },
+            { id: 2, name: "Sonu" },
+            { id: 3, name: "Tarun" },
+            { id: 4, name: "Balbir" },
+            { id: 5, name: "Amir" }
+
+        ];
+
+
+        const increasingOrder = data.slice().sort((a, b) => a.name.localeCompare(b.name));
+
+        const decreasingOrder = data.slice().sort((a, b) => b.name.localeCompare(a.name));
+        console.log("Original data:", data);
+        console.log("Increasing order:", increasingOrder);
+        console.log("Decreasing order:", decreasingOrder);
+    </script>
+
+</body>
+
+</html>
